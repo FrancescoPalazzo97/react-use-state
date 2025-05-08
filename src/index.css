@@ -4,6 +4,24 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* LAYOUT */
+
 .container {
   max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+  background-color: #f8f9fa;
+  padding: 25px 0;
+}
+
+header h1 {
+  font-size: 2.2rem;
 }
