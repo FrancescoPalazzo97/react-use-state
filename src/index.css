@@ -38,7 +38,9 @@ header h1 {
   border-radius: 10px;
   font-size: 1.3rem;
   padding: 10px;
+  transition: all 0.3s ease;
   cursor: pointer;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .card {
@@ -64,8 +66,15 @@ header h1 {
   color: #E34F26;
 }
 
-#HTML.active {
+#HTML:hover {
+  box-shadow: 0 8px 16px #E34F26;
+  transform: translateY(-2px);
+}
+
+#HTML.active,
+#HTML:active {
   background-color: #E34F26;
+  border-color: #E34F26;
   color: white;
 }
 
@@ -75,8 +84,15 @@ header h1 {
   color: #1572B6;
 }
 
-#CSS.active {
+#CSS:hover {
+  box-shadow: 0 8px 16px #1572B6;
+  transform: translateY(-2px);
+}
+
+#CSS.active,
+#CSS:active {
   background-color: #1572B6;
+  border-color: #1572B6;
   color: white;
 }
 
@@ -86,8 +102,15 @@ header h1 {
   color: #F7DF1E;
 }
 
-#JavaScript.active {
+#JavaScript:hover {
+  box-shadow: 0 8px 16px #F7DF1E;
+  transform: translateY(-2px);
+}
+
+#JavaScript.active,
+#JavaScript:active {
   background-color: #F7DF1E;
+  border-color: #F7DF1E;
   color: white;
 }
 
@@ -97,8 +120,15 @@ header h1 {
   color: #339933;
 }
 
-#Node\.js.active {
+#Node\.js:hover {
+  box-shadow: 0 8px 16px #339933;
+  transform: translateY(-2px);
+}
+
+#Node\.js.active,
+#Node\.js:active {
   background-color: #339933;
+  border-color: #339933;
   color: white;
 }
 
@@ -108,8 +138,15 @@ header h1 {
   color: #303030;
 }
 
-#Express.active {
+#Express:hover {
+  box-shadow: 0 8px 16px #303030;
+  transform: translateY(-2px);
+}
+
+#Express.active,
+#Express:active {
   background-color: #303030;
+  border-color: #303030;
   color: white;
 }
 
@@ -119,7 +156,14 @@ header h1 {
   color: #61DAFB;
 }
 
-#ReactJS.active {
+#ReactJS:hover {
+  box-shadow: 0 8px 16px #61DAFB;
+  transform: translateY(-2px);
+}
+
+#ReactJS.active,
+#ReactJS:active {
   background-color: #61DAFB;
+  border-color: #61DAFB;
   color: white;
 }
