@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import languages from '../assets/languages'
+import Btn from './Btn'
 
 const Main = () => {
 
@@ -20,9 +21,7 @@ const Main = () => {
                         const { id, title, description } = language
                         const handleClick = () => setContent({ title, description })
                         return (
-                            <button key={id} className="btn" id={id} onClick={handleClick}>
-                                {title}
-                            </button>
+                            <Btn language={language} handleClick={handleClick} />
                         )
                     })}
                 </div>
