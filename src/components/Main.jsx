@@ -36,9 +36,14 @@ const Main = () => {
                         )
                     })}
                 </div>
-                <div id="card-section">
-                    <Card content={content} />
-                </div>
+                {active ?
+                    <div id="card-section">
+                        <Card content={content} />
+                    </div>
+                    :
+                    <div className="card">
+                        <p>nessuna descrizione è stata selezionata. Seleziona un linguaggio per visualizzarne la descrizione.</p>
+                    </div>}
             </div>
         </main>
     )
