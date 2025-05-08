@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Btn = ({ language, handleClick }) => {
+const Btn = ({ language, isActive, handleClick }) => {
 
     const { id, title, description } = language
 
     return (
-        <button key={id} className="btn" id={title} onClick={handleClick}>
+        <button className={isActive ? 'active' : ''} id={title} onClick={handleClick}>
             {title}
         </button>
     )

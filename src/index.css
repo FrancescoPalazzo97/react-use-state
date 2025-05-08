@@ -32,12 +32,10 @@ header h1 {
   padding: 30px 0;
 }
 
-#btn-section .btn {
+#btn-section button {
   margin: 0 20px 0 0;
-
-  border: none;
+  border: 2px solid;
   border-radius: 10px;
-  color: white;
   font-size: 1.3rem;
   padding: 10px;
   cursor: pointer;
@@ -61,25 +59,67 @@ header h1 {
 }
 
 #HTML {
+  background-color: white;
+  border-color: #E34F26;
+  color: #E34F26;
+}
+
+#HTML.active {
   background-color: #E34F26;
+  color: white;
 }
 
 #CSS {
+  background-color: white;
+  border-color: #1572B6;
+  color: #1572B6;
+}
+
+#CSS.active {
   background-color: #1572B6;
+  color: white;
 }
 
 #JavaScript {
+  background-color: white;
+  border-color: #F7DF1E;
+  color: #F7DF1E;
+}
+
+#JavaScript.active {
   background-color: #F7DF1E;
+  color: white;
 }
 
 #Node\.js {
+  background-color: white;
+  border-color: #339933;
+  color: #339933;
+}
+
+#Node\.js.active {
   background-color: #339933;
+  color: white;
 }
 
 #Express {
+  background-color: white;
+  border-color: #303030;
+  color: #303030;
+}
+
+#Express.active {
   background-color: #303030;
+  color: white;
 }
 
 #ReactJS {
+  background-color: white;
+  border-color: #61DAFB;
+  color: #61DAFB;
+}
+
+#ReactJS.active {
   background-color: #61DAFB;
+  color: white;
 }

@@ -12,15 +12,27 @@ const Main = () => {
             'nessuna descrizione è stata selezionata. Seleziona un linguaggio per visualizzarne la descrizione.',
     })
 
+    const [active, setActive] = useState(null)
+
     return (
         <main>
             <div className="container">
                 <div id="btn-section">
                     {languages.map((language) => {
+
                         const { id, title, description } = language
-                        const handleClick = () => setContent({ title, description })
+
+                        const handleClick = () => (
+                            setContent({ title, description }),
+                            setActive(active === id ? null : id)
+                        )
+
                         return (
-                            <Btn key={id} language={language} handleClick={handleClick} />
+                            <Btn
+                                key={id}
+                                language={language}
+                                isActive={active === id}
+                                handleClick={handleClick} />
                         )
                     })}
                 </div>
