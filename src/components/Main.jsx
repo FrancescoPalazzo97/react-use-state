@@ -36,14 +36,17 @@ const Main = () => {
                         )
                     })}
                 </div>
-                {active ?
+                <div id="card-section">
+                    <Card content={active ? content : `nessuna descrizione è stata selezionata. Seleziona un linguaggio per visualizzarne la descrizione.`} />
+                </div>
+                {/* {active ?
                     <div id="card-section">
                         <Card content={content} />
                     </div>
                     :
                     <div className="card">
                         <p>nessuna descrizione è stata selezionata. Seleziona un linguaggio per visualizzarne la descrizione.</p>
-                    </div>}
+                    </div>} */}
             </div>
         </main>
     )
